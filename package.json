@@ -1,0 +1,25 @@
+{
+  "name": "APIVideos",
+  "version": "1.0.0",
+  "description": "API para trabalho de PTAC1, aplicaçao de videos",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "create": "npx sequelize-cli db:create"
+  },
+  "repository": "https://github.com/Amorim-EA/ServerSeguro_BdInCloud",
+  "author": "Amorim-EA <erick.amorim@estudante.ifms.edu.br>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.2",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1"
+  }
+}
