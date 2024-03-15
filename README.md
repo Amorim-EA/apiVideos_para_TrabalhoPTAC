@@ -16,5 +16,5 @@
 - nodemon
 - Inteligência 🧠
 
-### 🧔 person Coded By Erick Amorim
+### 🧔 Coded By Erick Amorim
 ## Thank You
