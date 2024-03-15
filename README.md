@@ -2,9 +2,9 @@
 ### https://api-videos-para-trabalho-ptac.vercel.app/
 
 # 🗃️ EndPoints
-### GET - /videos
-### GET - /video/:id
-### POST - /video
+- GET - /videos
+- GET - /video/:id
+- POST - /video
 
 ## 🖥️ Feito com:
 - Express
