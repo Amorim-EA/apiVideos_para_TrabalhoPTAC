@@ -1,12 +1,15 @@
 # 🏘️ Link: 
-### https://api-videos-para-trabalho-ptac.vercel.app/
+- https://api-videos-para-trabalho-ptac.vercel.app/
+
+## Descrição:
+- Esse é um trabalho que eu fiz sozinho para a disciplina PTAC, aplicações para cliente, e é feita em conjunto com o repositório https://github.com/Amorim-EA/TrabalhoPTAC
 
 # 🗃️ EndPoints
 - GET - /videos
 - GET - /video/:id
 - POST - /video
 
-## 🖥️ Feito com:
+## 🖥️ Tecnologias Utilizadas:
 - Express
 - Sequelize
 - Cors
