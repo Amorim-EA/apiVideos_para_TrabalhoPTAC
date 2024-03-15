@@ -17,4 +17,4 @@
 - Inteligência 🧠
 
 ### 🧔 Coded By Erick Amorim
-## Thank You
+### Thank You 😉
