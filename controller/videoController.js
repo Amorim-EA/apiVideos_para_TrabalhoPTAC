@@ -45,4 +45,47 @@ const findVideos = async (req, res) => {
     }
 }
 
-module.exports = { createVideo, findVideo, findVideos };
+const updateVideo = async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+        const { title, description, link } = req.body;
+        
+        await Video.update({
+            title: title,
+            description: description,
+            link: link
+        },{
+            where: {
+                id: id
+            }
+        });
+
+        res.json({ message: 'Video atualizado com sucesso!' });
+        console.log({ message: 'Video atualizado com sucesso!' });
+        
+    } catch (error) {
+        console.log({ message: `Erro ao atualizar: ${error}` });
+        return res.status(404).json({ message: 'Ocorreu um erro ao atualizar o video!' });
+        
+    };
+}
+
+const deleteVideo = async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+        await Video.destroy({
+            where: {
+                id: id
+            }
+        });
+
+        res.json({ message: 'Video apagado com sucesso!' });
+        console.log({ message: 'Video apagado com sucesso!' });
+        
+    } catch (error) {
+        console.log({ message: `Erro ao deletar: ${error}` });
+        return res.status(404).json({ message: 'Ocorreu um erro ao deletar o video!' });
+    };
+}
+
+module.exports = { createVideo, findVideo, findVideos, updateVideo, deleteVideo };
